@@ -1,0 +1,1 @@
+Process.stdout.write('Enter your simple Equation: ')
