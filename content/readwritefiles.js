@@ -1,0 +1,9 @@
+const { Console } = require('console');
+const fs = require('fs');// common js
+
+const textIn = fs.readFileSync('./test.txt', 'utf-8');
+console.log(textIn);
+
+const textOut = `This is what we know about the file: ${textIn}.\nCreated on ${Date.UTC(2024)}`;
+
+fs.writeFileSync('./writingTest.js', textOut);
